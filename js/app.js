@@ -32,7 +32,7 @@ const app = {
             
         app.caseChoisie = evt.target; // on récupere la div sur laquelle on a cliqué
         let caseChoisieContent = app.caseChoisie.textContent; // on récupère la valeur du texte contenu dans app.caseChoisie;
-        let indexJoueur = ""; //stockera si X ou Y a joué
+        let indexJoueur = ""; //stockera si X ou O a joué
         
         if (caseChoisieContent === "") { // on checke si la div où on a cliqué est vide, si elle ne l'est pas, c'est qu'on a déjà joué. Ou alors qu'on a un vieux bug dégueulasse qui traine, mais je vous rassure, ce n'est pas le cas !
             if (app.turn % 2 === 0) { // on vérifie si le tour est pair : s'il est pair, c'est au joueur O de jouer
